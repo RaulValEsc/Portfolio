@@ -1,0 +1,90 @@
+---
+import Badge from '../components/Badge.astro';
+import Briefcase from '../icons/Briefcase.astro';
+import Experience from '../components/Experience.astro';
+import GitHub from '../icons/GitHub.astro';
+import Layout from '../layouts/Layout.astro';
+import LinkedIn from '../icons/LinkedIn.astro'
+import Mail from '../icons/Mail.astro'
+import Section from '../components/Section.astro';
+import SocialPill from '../components/SocialPill.astro';
+---
+
+<Layout title="Portfolio de Raúl - FullStack Engineer" description="">
+
+    <main class="px-4">
+
+        <Section class="py-44 pb-32">
+
+            <img class="rounded-full size-12 mb-4" src="/Raul.webp" alt="Raul" />
+
+            <h1 class="text-purple-800 dark:text-purple-200 text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+
+                Hola, soy Raúl!
+
+                <a
+                    href="https://linkedin.com/in/raúl-valverde-escobedo-a53479232"
+                    target="_blank"
+                    rel="noopener"
+                    class="flex justify-center items-center"
+                >
+
+                    <Badge>Disponible para trabajar</Badge>
+
+                </a>
+
+            </h1>
+
+            <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
+
+                +2 años de experiencia. Desarrollador Web. De Granada, España. Especializado en crear aplicaciones y experiencias únicas.
+
+            </h2>
+
+            <nav class="flex gap-4 mt-8 flex-wrap">
+
+                <SocialPill href="https://linkedin.com/in/raúl-valverde-escobedo-a53479232">
+
+                    <LinkedIn class="size-4 md:size-6" />
+
+                    LinkedIn
+
+                </SocialPill>
+
+                <SocialPill href="https://github.com/RaulValEsc">
+
+                    <GitHub class="size-4 md:size-6" />
+
+                    GitHub
+
+                </SocialPill>
+
+                <SocialPill href="mailto:raulvalesc@gmail.com">
+
+                    <Mail class="size-4 md:size-6" />
+
+                    raulvalesc@gmail.com
+
+                </SocialPill>
+
+            </nav>
+
+        </Section>
+
+        <Section id="experience">
+
+            <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+                
+                <Briefcase class="size-7" />
+
+                Experiencia laboral
+               
+            </h2>
+
+            <Experience />
+            
+        </Section>
+
+    </main>
+
+</Layout>
