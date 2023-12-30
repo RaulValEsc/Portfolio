@@ -8,9 +8,16 @@ import LinkedIn from '@/icons/LinkedIn.astro'
 import Mail from '@/icons/Mail.astro'
 import Section from '@/components/Section.astro';
 import SocialPill from '@/components/SocialPill.astro';
+import { getTranslations } from '../translations/index.ts'
+
+// Get the current locale
+const { currentLocale } = Astro;
+
+// Load the current translations
+const translations = getTranslations(currentLocale);
 ---
 
-<Layout title="Portfolio de Raúl - FullStack Engineer" description="">
+<Layout title={ translations.SEO.TITLE } description="">
 
     <main class="px-4">
 
@@ -20,7 +27,7 @@ import SocialPill from '@/components/SocialPill.astro';
 
             <h1 class="text-purple-800 dark:text-purple-200 text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 
-                Hola, soy Raúl!
+                { translations.INTRODUCTION.TITLE }
 
                 <a
                     href="https://linkedin.com/in/raúl-valverde-escobedo-a53479232"
@@ -29,7 +36,7 @@ import SocialPill from '@/components/SocialPill.astro';
                     class="flex justify-center items-center"
                 >
 
-                    <Badge>Disponible para trabajar</Badge>
+                    <Badge>{ translations.INTRODUCTION.OPEN_TO_WORK }</Badge>
 
                 </a>
 
