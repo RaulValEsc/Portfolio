@@ -1,56 +1,52 @@
 ---
-import '@fontsource-variable/onest';
-import Header from '@/components/Header.astro';
+import "@fontsource-variable/onest";
+import Header from "@/components/Header.astro";
 
 interface Props {
     description: string;
-	title: string;
+    title: string;
 }
 
 const { description, title }: Props = Astro.props;
 ---
 
 <!doctype html>
-
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
 
-	<head>
+        <meta name="description" content={description} />
 
-		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
 
-		<meta name="description" content={description} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+    </head>
 
-		<meta name="generator" content={Astro.generator} />
-
-		<title>{title}</title>
-
-	</head>
-
-	<body class="relative">
-
-        <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    <body class="relative">
+        <div
+            class="absolute inset-0 -z-10 h-full w-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+        >
+        </div>
 
         <Header />
 
         <slot />
-
-	</body>
-    
+    </body>
 </html>
 
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
+    :root {
+        color-scheme: light dark;
+    }
 
-	html {
-		font-family: 'Onest Variable', system-ui, sans-serif;
+    html {
+        font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
-	}
+    }
 
     body {
         background: #050505;
