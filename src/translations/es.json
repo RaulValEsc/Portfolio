@@ -4,6 +4,12 @@
         "TEXT": "+2 años de experiencia. Desarrollador Web. De Granada, España. Especializado en crear aplicaciones y experiencias únicas.",
         "TITLE": "¡Hola, soy Raúl!"
     },
+    "MENU": {
+        "HOME": "Inicio",
+        "EXPERIENCE": "Experiencia",
+        "PROJECTS": "Proyectos",
+        "CONTACT": "Contacto"
+    },
     "SEO": {
         "DESCRIPTION": "",
         "TITLE": "Portfolio de Raúl - FullStack Engineer"

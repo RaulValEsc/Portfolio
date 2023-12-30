@@ -1,3 +1,13 @@
+---
+import { getTranslations } from "@/translations/index.ts";
+
+// Get the current locale
+const { currentLocale } = Astro;
+
+// Load the current translations
+const translations = getTranslations(currentLocale);
+---
+
 <header
     class={`
         flex justify-center items-center
@@ -17,23 +27,20 @@
             backdrop-blur-2xl
         `}
     >
-        <a class="hover:bg-white/10 rounded-full px-3 transition" href="/"
-            >Home</a
+        <a class="hover:bg-white/10 rounded-full px-3 transition" href="#top"
+            >{ translations.MENU.HOME }</a
         >
-        <a class="hover:bg-white/10 rounded-full px-3 transition" href="/about"
-            >About</a
+        <a
+            class="hover:bg-white/10 hidden rounded-full px-3 transition"
+            href="#projects">{ translations.MENU.PROJECTS }</a
         >
         <a
             class="hover:bg-white/10 rounded-full px-3 transition"
-            href="/projects">Projects</a
+            href="#experience">{ translations.MENU.EXPERIENCE }</a
         >
         <a
             class="hover:bg-white/10 rounded-full px-3 transition"
-            href="/experience">Experience</a
-        >
-        <a
-            class="hover:bg-white/10 rounded-full px-3 transition"
-            href="/contact">Contact</a
+            href="#contact">{ translations.MENU.CONTACT }</a
         >
     </nav>
 </header>

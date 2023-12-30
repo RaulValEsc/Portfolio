@@ -4,6 +4,12 @@
         "OPEN_TO_WORK": "Open to work",
         "TEXT": "+2 years of experience. Web developer. From Granada, Spain. Specialized in creating unique and exciting applications."
     },
+    "MENU": {
+        "HOME": "Home",
+        "EXPERIENCE": "Experience",
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact"
+    },
     "SEO": {
         "DESCRIPTION": "",
         "TITLE": "Raul's Portfolio - FullStack Engineer"
