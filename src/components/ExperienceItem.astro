@@ -1,19 +1,25 @@
 ---
 import Badge from "@/components/Badge.astro";
+import { getTranslations } from "@/translations/index.ts";
+
+// Get the current locale
+const { currentLocale } = Astro;
+
+// Load the current translations
+const translations = getTranslations(currentLocale);
 
 interface Props {
     date: string;
-    description: string;
     link?: string;
     tags?: Array<string>;
     title: string;
 }
 
-const { title, description, link, date, tags } = Astro.props;
+const { title, link, date, tags } = Astro.props;
 ---
 
 <div
-    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white bg-white dark:border-gray-800 dark:bg-gray-500"
 >
 </div>
 
@@ -27,9 +33,9 @@ const { title, description, link, date, tags } = Astro.props;
 
 {tags?.map((tag) => <Badge>{tag}</Badge>)}
 
-<p class="mb-4 text-base font-normal text-gray-200 text-balance">
-    {description}
-</p>
+<div class="mb-4 text-base font-normal text-gray-200 text-balance">
+    <slot />
+</div>
 
 {
     link && (
@@ -44,7 +50,7 @@ const { title, description, link, date, tags } = Astro.props;
                 transition
                 hover:scale-110 hover:bg-white/10"
         >
-            Saber más...{" "}
+            {translations.EXPERIENCE.KNOW_MORE}...
             <svg
                 class="w-3 h-3 ms-2 rtl:rotate-180"
                 aria-hidden="true"

@@ -1,18 +1,367 @@
 ---
+import Angular from "@/icons/Angular.astro";
+import CSS from "@/icons/CSS.astro";
 import ExperienceItem from "@/components/ExperienceItem.astro";
+import ExpressJs from "@/icons/Express.js.astro";
+import HTML from "@/icons/HTML.astro";
+import Ionic from "@/icons/Ionic.astro";
+import JavaScript from "@/icons/JavaScript.astro";
+import Jest from "@/icons/Jest.astro";
+import JWT from "@/icons/JWT.astro";
+import MySQL from "@/icons/MySQL.astro";
+import MongoDB from "@/icons/MongoDB.astro";
+import NodeJs from "@/icons/Node.js.astro";
+import Nx from "@/icons/Nx.astro";
+import Php from "@/icons/Php.astro";
+import Puppeteer from "@/icons/Puppeteer.astro";
+import Rabbitmq from "@/icons/Rabbitmq.astro";
+import RxJS from "@/icons/RxJS.astro";
+import Sass from "@/icons/Sass.astro";
+import Skill from "@/components/Skill.astro";
+import Slack from "@/icons/Slack.astro";
+import Tailwind from "@/icons/Tailwind.astro";
+import TypeScript from "@/icons/TypeScript.astro";
+import { getTranslations } from "@/translations/index.ts";
+
+// Get the current locale
+const { currentLocale } = Astro;
+
+// Load the current translations
+const translations = getTranslations(currentLocale);
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">
     <li class="mb-10 ms-4">
         <ExperienceItem
-            date="Marzo 2022 - Actualidad"
-            ,
-            description=""
+            date={translations.EXPERIENCE.INFORMATICA_CANO.DATE}
             ,
             title="FullStack Engineer - Informática Cano"
             ,
-            tags={["B2B"]}
+            tags={[
+                "B2B",
+                translations.EXPERIENCE.INFORMATICA_CANO.SOFTWARE_DEVELOPMENT,
+            ]}
             ,
-        />
+        >
+            <ul class="list-disc ml-6 mt-2">
+                <li class="mb-4">
+                    <span class="mr-0.5"><strong>Distribution:</strong></span>
+                    <p
+                        class="ml-2"
+                        set:html={translations.EXPERIENCE.INFORMATICA_CANO
+                            .REPOSICIONES_DESCRIPTION}
+                    />
+                    <div class="flex flex-wrap w-5/6 gap-1 mt-1 justify-center">
+                        <Skill>
+                            <TypeScript class="size-4" />
+                             TypeScript
+                        </Skill>
+
+                        <Skill>
+                            <Angular class="size-4" />
+                             Angular
+                        </Skill>
+
+                        <Skill>
+                            <HTML class="size-4" />
+                             HTML
+                        </Skill>
+
+                        <Skill>
+                            <Tailwind class="size-4" />
+                             Tailwind CSS
+                        </Skill>
+
+                        <Skill>
+                            <Sass class="size-4" />
+                             Sass
+                        </Skill>
+
+                        <Skill>
+                            <Nx class="size-4" />
+                             Nx
+                        </Skill>
+
+                        <Skill>
+                            <RxJS class="size-4" />
+                             RxJS
+                        </Skill>
+
+                        <Skill>
+                            <NodeJs class="size-4" />
+                             Node.js
+                        </Skill>
+
+                        <Skill>
+                            <ExpressJs class="size-4" />
+                             Express.js
+                        </Skill>
+
+                        <Skill>
+                            <MongoDB class="size-4" />
+                             MongoDB
+                        </Skill>
+
+                        <Skill>
+                            <Rabbitmq class="size-4" />
+                             Rabbitmq
+                        </Skill>
+
+                        <Skill>
+                            <JWT class="size-4" />
+                             JWT
+                        </Skill>
+
+                        <Skill>
+                            <Puppeteer class="size-4" />
+                             Puppeteer
+                        </Skill>
+
+                        <Skill>
+                            <Jest class="size-4" />
+                             Jest
+                        </Skill>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <span class="mr-0.5"><strong>Gk2Web:</strong></span>
+                    <p
+                        class="ml-2"
+                        set:html={translations.EXPERIENCE.INFORMATICA_CANO
+                            .GK2WEB_DESCRIPTION}
+                    />
+                    <div class="flex flex-wrap w-5/6 gap-1 mt-1 justify-center">
+                        <Skill>
+                            <Php class="size-4" />
+                             Php
+                        </Skill>
+
+                        <Skill>
+                            <JavaScript class="size-4" />
+                             JavaScript
+                        </Skill>
+
+                        <Skill>jQuery</Skill>
+
+                        <Skill>
+                            <HTML class="size-4" />
+                             HTML
+                        </Skill>
+
+                        <Skill>
+                            <CSS class="size-4" />
+                             CSS
+                        </Skill>
+
+                        <Skill>
+                            <MySQL class="size-4" />
+                             MySQL
+                        </Skill>
+
+                        <Skill>Firebird</Skill>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <span class="mr-0.5"><strong>ERP:</strong></span>
+                    <p
+                        class="ml-2"
+                        set:html={translations.EXPERIENCE.INFORMATICA_CANO
+                            .DITRAGES_DESCRIPTION}
+                    />
+                    <div class="flex flex-wrap w-5/6 gap-1 mt-1 justify-center">
+                        <Skill>
+                            <TypeScript class="size-4" />
+                             TypeScript
+                        </Skill>
+
+                        <Skill>
+                            <Angular class="size-4" />
+                             Angular
+                        </Skill>
+
+                        <Skill>
+                            <HTML class="size-4" />
+                             HTML
+                        </Skill>
+
+                        <Skill>
+                            <Tailwind class="size-4" />
+                             Tailwind CSS
+                        </Skill>
+
+                        <Skill>
+                            <Sass class="size-4" />
+                             Sass
+                        </Skill>
+
+                        <Skill>
+                            <Nx class="size-4" />
+                             Nx
+                        </Skill>
+
+                        <Skill>
+                            <RxJS class="size-4" />
+                             RxJS
+                        </Skill>
+
+                        <Skill>
+                            <NodeJs class="size-4" />
+                             Node.js
+                        </Skill>
+
+                        <Skill>
+                            <ExpressJs class="size-4" />
+                             Express.js
+                        </Skill>
+
+                        <Skill>
+                            <MongoDB class="size-4" />
+                             MongoDB
+                        </Skill>
+
+                        <Skill>
+                            <Rabbitmq class="size-4" />
+                             Rabbitmq
+                        </Skill>
+
+                        <Skill>
+                            <JWT class="size-4" />
+                             JWT
+                        </Skill>
+
+                        <Skill>
+                            <Puppeteer class="size-4" />
+                             Puppeteer
+                        </Skill>
+
+                        <Skill>
+                            <Jest class="size-4" />
+                             Jest
+                        </Skill>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <span class="mr-0.5"><strong>Appointments:</strong></span>
+                    <p
+                        class="ml-2"
+                        set:html={translations.EXPERIENCE.INFORMATICA_CANO
+                            .APPOINTMENTS_DESCRIPTION}
+                    />
+                    <div class="flex flex-wrap w-5/6 gap-1 mt-1 justify-center">
+                        <Skill>
+                            <TypeScript class="size-4" />
+                             TypeScript
+                        </Skill>
+
+                        <Skill>
+                            <Angular class="size-4" />
+                             Angular
+                        </Skill>
+
+                        <Skill>
+                            <HTML class="size-4" />
+                             HTML
+                        </Skill>
+
+                        <Skill>
+                            <Tailwind class="size-4" />
+                             Tailwind CSS
+                        </Skill>
+
+                        <Skill>
+                            <Sass class="size-4" />
+                             Sass
+                        </Skill>
+
+                        <Skill>
+                            <Nx class="size-4" />
+                             Nx
+                        </Skill>
+
+                        <Skill>
+                            <RxJS class="size-4" />
+                             RxJS
+                        </Skill>
+
+                        <Skill>
+                            <NodeJs class="size-4" />
+                             Node.js
+                        </Skill>
+
+                        <Skill>
+                            <ExpressJs class="size-4" />
+                             Express.js
+                        </Skill>
+
+                        <Skill>
+                            <MongoDB class="size-4" />
+                             MongoDB
+                        </Skill>
+
+                        <Skill>
+                            <Rabbitmq class="size-4" />
+                             Rabbitmq
+                        </Skill>
+
+                        <Skill>
+                            <JWT class="size-4" />
+                             JWT
+                        </Skill>
+
+                        <Skill>
+                            <Puppeteer class="size-4" />
+                             Puppeteer
+                        </Skill>
+
+                        <Skill>
+                            <Jest class="size-4" />
+                             Jest
+                        </Skill>
+                    </div>
+                </li>
+            </ul>
+        </ExperienceItem>
+    </li>
+    <li class="mb-10 ms-4">
+        <ExperienceItem
+            date="Febrero 2023 - Abril 2023"
+            ,
+            title="Frontend Developer - Golf People App"
+            ,
+            tags={["B2C", "Golf"]}
+            ,
+            link="https://golfpeople.com/"
+        >
+            <p class="ml-6 mt-2">
+                {translations.EXPERIENCE.GOLF_PEOPLE.DESCRIPTION}
+            </p>
+
+            <div class="flex flex-wrap justify-center w-5/6 gap-1 mt-1">
+                <Skill>
+                    <Ionic class="size-4" />
+                     Ionic
+                </Skill>
+
+                <Skill>
+                    <TypeScript class="size-4" />
+                     TypeScript
+                </Skill>
+
+                <Skill>
+                    <HTML class="size-4" />
+                     HTML
+                </Skill>
+
+                <Skill>
+                    <CSS class="size-4" />
+                     CSS
+                </Skill>
+
+                <Skill>
+                    <Slack class="size-4" />
+                     Slack
+                </Skill>
+            </div>
+        </ExperienceItem>
     </li>
 </ol>

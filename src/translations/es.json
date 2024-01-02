@@ -1,4 +1,20 @@
 {
+    "EXPERIENCE": {
+        "GOLF_PEOPLE": {
+            "DATE": "Febrero 2023 - Abril 2023",
+            "DESCRIPTION": "Desarrollo de el Frontend de la aplicación para dispositivos móviles Golf People en el último tramo de desarrollo previo al lanzamiento."
+        },
+        "INFORMATICA_CANO": {
+            "APPOINTMENTS_DESCRIPTION": "Desarrollo de un <strong>sistema de gestión de citas</strong>, con el objetivo de <strong>digitalizar el proceso de gestión de las citas de una clínica</strong> y <strong>facilitar la comunicación con los clientes</strong> creando un portal de citas para el cliente, donde dependiendo de la maquinaria necesaria, el establecimiento y el empleado <strong>calcula el horario y las citas disponibles</strong>. Este sistema fue implementado utilizando <strong>Node.js para el backend y Angular para el frontend</strong>. Mi papel incluyó la <strong>planificación de la arquitectura del software</strong>, la <strong>implementación de microservicios</strong> y la garantía de que el sistema fuera <strong>escalable y mantenible</strong>. Una de mis participaciones destacables en este desarrollo fue la <strong>creación del algoritmo de búsqueda de citas disponibles</strong>, teniendo en cuenta el horario de cada máquina para cada establecimiento, el horario del empleado y el del establecimiento, pudiendo encontrar excepciones de horario, <strong>este algoritmo calculaba las citas disponibles de un mes en un tiempo de 1 a 2 segundos</strong>.",
+            "DATE": "2022 - Actualidad",
+            "DITRAGES_DESCRIPTION": "Participé en el desarrollo de un nuevo ERP para la empresa, diseñado con una arquitectura hexagonal y siguiendo los principios de <strong>DDD</strong> (Domain Driven Design). Este proyecto fue implementado utilizando <strong>Node.js para el backend y Angular para el frontend</strong>. Mi papel incluyó la <strong>planificación de la arquitectura del software</strong>, la <strong>implementación de microservicios</strong> y la garantía de que el sistema fuera <strong>escalable y mantenible</strong>. Este nuevo ERP fue creado con la intención de sustituir y renovar Gk2Web, y ha demostrado ser una <strong>mejora significativa en términos de eficiencia y usabilidad</strong>.",
+            "GK2WEB_DESCRIPTION": "Programa de facturación orientado a pequeñas y medianas empresas. <strong>Refactorización de funcionalidades completas</strong> como la creación de facturas de gastos, <strong>desarrollo de apartados independientes desde cero</strong> tales como un CRM integrado en el programa, <strong>arreglo de errores</strong> y <strong>optimización de 'Querys'</strong> para obtener listados de contabilidad llegando a optimizar algunos procesos en un <strong>60%</strong>.",
+            "REPOSICIONES_DESCRIPTION": "<strong>Lideré un equipo de desarrollo de tres personas</strong> en la creación de un programa de gestión de logística, desempeñando los roles de desarrollador y Scrum Manager. Inspirado en mi experiencia previa en el desarrollo de un ERP, planifiqué la arquitectura del software, implementando microservicios y asegurando la escalabilidad y mantenibilidad del programa. Utilizamos <strong>Node.js para el backend</strong> y <strong>Angular para el frontend</strong>, siguiendo principios de diseño orientado al dominio <strong>(DDD)</strong>. El resultado fue un programa eficiente y útil, proporcionando a la empresa una solución adaptada a sus necesidades y demostrando <strong>mi capacidad para liderar proyectos exitosos</strong>.",
+            "SOFTWARE_DEVELOPMENT": "Desarrollo de Software"
+        },
+        "KNOW_MORE": "Saber más",
+        "TITLE": "Experiencia Laboral"
+    },
     "INTRODUCTION": {
         "OPEN_TO_WORK": "Disponible para trabajar",
         "TEXT": "+2 años de experiencia. Desarrollador Web. De Granada, España. Especializado en crear aplicaciones y experiencias únicas.",

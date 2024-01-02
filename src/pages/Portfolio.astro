@@ -8,7 +8,7 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import Mail from "@/icons/Mail.astro";
 import Section from "@/components/Section.astro";
 import SocialPill from "@/components/SocialPill.astro";
-import { getTranslations } from "../translations/index.ts";
+import { getTranslations } from "@/translations/index.ts";
 
 // Get the current locale
 const { currentLocale } = Astro;
@@ -42,8 +42,7 @@ const translations = getTranslations(currentLocale);
             </h1>
 
             <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
-                +2 años de experiencia. Desarrollador Web. De Granada, España.
-                Especializado en crear aplicaciones y experiencias únicas.
+                {translations.INTRODUCTION.TEXT}
             </h2>
 
             <nav class="flex gap-4 mt-8 flex-wrap">
@@ -73,7 +72,7 @@ const translations = getTranslations(currentLocale);
             <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
                 <Briefcase class="size-7" />
 
-                 Experiencia laboral
+                {translations.EXPERIENCE.TITLE}
             </h2>
 
             <Experience />

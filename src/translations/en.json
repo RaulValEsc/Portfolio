@@ -1,4 +1,20 @@
 {
+    "EXPERIENCE": {
+        "GOLF_PEOPLE": {
+            "DATE": "February 2023 - April 2023",
+            "DESCRIPTION": "Frontend Development of the Golf People mobile application in the last stage of development prior to launch."
+        },
+        "INFORMATICA_CANO": {
+            "APPOINTMENTS_DESCRIPTION": "I developed an <strong>appointment management system</strong>, with the aim of <strong>digitizing the appointment management process of a clinic</strong> and <strong>facilitating communication with clients by creating a client appointment portal</strong>, where depending on the necessary machinery, the establishment, and the employee, it <strong>calculates the schedule and available appointments</strong>. This system was implemented using <strong>Node.js for the backend and Angular for the frontend</strong>. My role included <strong>planning the software architecture</strong>, <strong>implementing microservices</strong>, and <strong>ensuring that the system was scalable and maintainable</strong>. One of my notable contributions to this development was <strong>the creation of the available appointments search algorithm</strong>, considering the schedule of each machine for each establishment, the employee's schedule, and the establishment's schedule, being able to find schedule exceptions, <strong>this algorithm calculated the available appointments for a month in a time of 1 to 2 seconds</strong>.",
+            "DATE": "2022 - Present",
+            "DITRAGES_DESCRIPTION": "I participated in the development of a new ERP for the company, designed with a hexagonal architecture and following the principles of <strong>DDD</strong> (Domain Driven Design). This project was implemented using <strong>Node.js for the backend and Angular for the frontend</strong>. My role included <strong>planning the software architecture</strong>, <strong>implementing microservices</strong>, and ensuring that the system was <strong>scalable and maintainable</strong>. This new ERP was created with the intention of replacing and renewing Gk2Web, and has proven to be a <strong>significant improvement in terms of efficiency and usability</strong>.",
+            "GK2WEB_DESCRIPTION": "Billing program aimed at small and medium-sized businesses. <strong>Refactoring of complete functionalities</strong> such as the creation of expense invoices, <strong>development of independent sections from scratch</strong> such as a CRM integrated into the program, <strong>error fixing</strong> and <strong>optimization of 'Querys'</strong> to obtain accounting listings, managing to optimize some processes by <strong>60%</strong>.",
+            "REPOSICIONES_DESCRIPTION": "<strong>I led a three-person development team</strong> in creating a logistics management program, serving as both a developer and Scrum Manager. Drawing from my previous experience in ERP development, I planned the software architecture, implemented microservices, and ensured the scalability and maintainability of the program. We utilized <strong>Node.js for the backend</strong> and <strong>Angular for the frontend</strong>, adhering to Domain-Driven Design <strong>(DDD)</strong> principles. The result was an efficient and practical program, providing the company with a tailored solution to its needs and showcasing <strong>my ability to lead successful projects</strong>.",
+            "SOFTWARE_DEVELOPMENT": "Software Development"
+        },
+        "KNOW_MORE": "Know more",
+        "TITLE": "Work Experience"
+    },
     "INTRODUCTION": {
         "TITLE": "Hi, im Raúl!",
         "OPEN_TO_WORK": "Open to work",
