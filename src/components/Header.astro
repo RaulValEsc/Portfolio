@@ -1,4 +1,6 @@
 ---
+import Spanish from "@/icons/flags/Spanish.astro";
+import English from "@/icons/flags/English.astro";
 import { getTranslations } from "@/translations/index.ts";
 
 // Get the current locale
@@ -10,7 +12,7 @@ const translations = getTranslations(currentLocale);
 
 <header
     class={`
-        flex justify-center items-center
+        flex items-center justify-between
         mx-auto
         py-5
         sticky top-0
@@ -18,6 +20,9 @@ const translations = getTranslations(currentLocale);
         z-10
     `}
 >
+    <div class="ml-2">
+        <!-- Theme selector -->
+    </div>
     <nav
         class={`
             border border-black rounded-full
@@ -28,19 +33,112 @@ const translations = getTranslations(currentLocale);
         `}
     >
         <a class="hover:bg-white/10 rounded-full px-3 transition" href="#top"
-            >{ translations.MENU.HOME }</a
+            >{translations.MENU.HOME}</a
         >
         <a
             class="hover:bg-white/10 hidden rounded-full px-3 transition"
-            href="#projects">{ translations.MENU.PROJECTS }</a
+            href="#projects">{translations.MENU.PROJECTS}</a
         >
         <a
             class="hover:bg-white/10 rounded-full px-3 transition"
-            href="#experience">{ translations.MENU.EXPERIENCE }</a
+            href="#experience">{translations.MENU.EXPERIENCE}</a
         >
         <a
             class="hover:bg-white/10 rounded-full px-3 transition"
-            href="#contact">{ translations.MENU.CONTACT }</a
+            href="#contact">{translations.MENU.CONTACT}</a
         >
     </nav>
+    <div class="flex flex-col w-fit mr-2 relative">
+        <button
+            onclick="toggleDropDown()"
+            data-dropdown-toggle="language-dropdown"
+            class="flex w-fit h-5 items-center justify-center bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300"
+            type="button"
+        >
+            {
+                currentLocale === "es" ? (
+                    <div class="flex w-fit gap-1">
+                        <Spanish class="size-4" /> Español
+                    </div>
+                ) : (
+                    <div class="flex w-fit gap-1">
+                        <English class="size-4" /> English
+                    </div>
+                )
+            }
+
+            <svg
+                id="arrow-svg"
+                class="w-2.5 h-full ms-3 rotate-180 transition-all duration-150"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+                ><path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"></path>
+            </svg>
+        </button>
+
+        <div
+            hidden
+            id="language-dropdown"
+            class="z-10 absolute bg-gray-200 divide-y top-[1.30rem] divide-gray-300 rounded-md shadow w-fit dark:bg-gray-700"
+        >
+            {
+                currentLocale == "es" ? (
+                    <ul class="text-sm w-fit">
+                        <li>
+                            <span class="flex cursor-default items-center gap-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-t-lg">
+                                <Spanish class="size-4" />{" "}
+                                {translations.LANGUAGES.SPANISH}
+                            </span>
+                        </li>
+                        <li>
+                            <a
+                                class="flex cursor-pointer items-center gap-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-b-lg"
+                                href="/en"
+                            >
+                                <English class="size-4" />{" "}
+                                {translations.LANGUAGES.ENGLISH}
+                            </a>
+                        </li>
+                    </ul>
+                ) : (
+                    <ul class="text-sm w-fit">
+                        <li>
+                            <a
+                                class="flex cursor-pointer items-center gap-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-t-lg"
+                                href="/"
+                            >
+                                <Spanish class="size-4" />{" "}
+                                {translations.LANGUAGES.SPANISH}
+                            </a>
+                        </li>
+                        <li>
+                            <span class="flex cursor-default items-center gap-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white rounded-b-lg">
+                                <English class="size-4" />{" "}
+                                {translations.LANGUAGES.ENGLISH}
+                            </span>
+                        </li>
+                    </ul>
+                )
+            }
+        </div>
+    </div>
 </header>
+
+<script type="text/javascript">
+    /**
+     * Toggle the language drop down.
+     */
+    function toggleDropDown() {
+        // Toggle the hidden attribute
+        document.querySelector("#language-dropdown").toggleAttribute("hidden");
+
+        document.getElementById("arrow-svg").classList.toggle("rotate-180");
+    }
+</script>

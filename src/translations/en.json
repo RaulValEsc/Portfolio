@@ -20,6 +20,10 @@
         "OPEN_TO_WORK": "Open to work",
         "TEXT": "+2 years of experience. Web developer. From Granada, Spain. Specialized in creating unique and exciting applications."
     },
+    "LANGUAGES": {
+        "ENGLISH": "English",
+        "SPANISH": "Spanish"
+    },
     "MENU": {
         "HOME": "Home",
         "EXPERIENCE": "Experience",

@@ -20,6 +20,10 @@
         "TEXT": "+2 años de experiencia. Desarrollador Web. De Granada, España. Especializado en crear aplicaciones y experiencias únicas.",
         "TITLE": "¡Hola, soy Raúl!"
     },
+    "LANGUAGES": {
+        "ENGLISH": "Inglés",
+        "SPANISH": "Español"
+    },
     "MENU": {
         "HOME": "Inicio",
         "EXPERIENCE": "Experiencia",
